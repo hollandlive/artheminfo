@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Bootstrap Carousel Demo</title>
+  <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    
+    <!-- Custom styles for lightbox -->
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+
+  
+  
+
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-right">
+      <div class="container">
+        <div class="navbar-header" style="float:right;" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="about.html">About Me</a>
+          <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+          <a class="navbar-brand" href="services.html">My Services</a>
+          <a class="navbar-brand" href="index.html">Contact</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        
+        
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+<div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+      <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+        <li data-slide-to="1" data-target="#carousel-example-generic" class=""></li>
+        <li data-slide-to="2" data-target="#carousel-example-generic" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img alt="First slide" src="img/101.jpg" class="img-responsive">
+        </div>
+        
+        
+         <div class="item">
+          <img alt="First slide" src="img/102.jpg">
+        </div>
+        
+         <div class="item">
+          <img alt="First slide" src="img/103.jpg">
+        </div>
+        
+        
+
+      </div>
+      <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+
+          
+          <br><br>
+          Most of my photos are to sell via those web-sites. <br> Click a button below to get forwarded to my client e-shop where you can purchase my works directly
+          </p>
+          <p><a class="btn btn-success" href="http://nl.fotolia.com/p/204774895/partner/204774895" target="_blank" role="button">Buy Vectors &raquo;</a></p>
+        </div>
+        </div>
+        
+        <div class="container">
+        <h2>My Vintage Serie 2014 <br><small>(Location Utrecht Business Park).</small><br> <small> Model Fun de Hulster. Assitance and Design A. Aksenovs</small></h2>
+        <div class="gallery">
+        <div class="row">
+        
+        <div class="col-md-2">
+        <a href="img/vintage_01.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/vintage_01.jpg" width="200px" class="img-thumbnail"/>
+        </a> 
+       </div>
+       
+               <div class="col-md-2">
+        <a href="img/vintage_02.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/vintage_02.jpg" width="200px" class="img-thumbnail"/>
+        </a> 
+       </div>
+       
+               <div class="col-md-2">
+        <a href="img/vintage_03.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/vintage_03.jpg" width="200px" class="img-thumbnail"/>
+        </a> 
+       </div>
+       
+               <div class="col-md-2">
+        <a href="img/vintage_04.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/vintage_04.jpg" width="200px" class="img-thumbnail"/>
+        </a> 
+       </div>
+       
+               <div class="col-md-2">
+        <a href="img/vintage_05.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/vintage_05.jpg" width="200px" class="img-thumbnail"/>
+        </a> 
+       </div>
+       
+               <div class="col-md-2">
+        <a href="img/vintage_06.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/vintage_06.jpg" width="200px" class="img-thumbnail"/>
+        </a> 
+       </div>
+        
+        
+        </div><!--row 1 ends-->
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="container">
+      
+        <div class="gallery">
+        <div class="row">
+        
+        <div class="col-md-3">
+        <a href="img/01.jpg" data-title="Photo1" data-lightbox="Vacation">
+            <img src="img/01.jpg" width="200px" class="img-thumbnail"/>
+        </a>      
+        </div>
+        
+        <div class="col-md-3">
+        <a href="img/02.jpg" data-title="Photo2" data-lightbox="Vacation">
+            <img src="img/02.jpg" width="200px" class="img-thumbnail"/>
+        </a>      
+        </div>
+        
+        <div class="col-md-3">
+        <a href="img/03.jpg" data-title="Photo3" data-lightbox="Vacation">
+            <img src="img/03.jpg" width="200px" class="img-thumbnail"/>
+        </a>      
+        </div>
+        
+        <div class="col-md-3">
+        <a href="img/04.jpg" data-title="Photo4" data-lightbox="Vacation">
+            <img src="img/04.jpg" width="200px" class="img-thumbnail"/>
+        </a>      
+        </div>
+        
+        </div><!--row2 ends-->
+        </div>
+        </div>
+        
+        
+   
+        
+      
+        
+        
+  
+
+
+      
+      
+      
+      
+ 
+        
+  
+      
+
+
+      
+ 
+      
+      
+      
+      
+      
+      
+      
+
+      <footer>
+        <p><a href="http://arthem.info"> &copy; Arthem.Info 2015</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+  </body>
+</html>
