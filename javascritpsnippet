@@ -1,0 +1,23 @@
+<div class="col-md-12 text-center">
+
+
+<h3 class="text-info">Today is</h3>
+
+<button class="btn btn-primary" type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click to display Date and Time.</button>
+
+<p id="demo" class="text-info"></p>
+</div>
+
+<div class="col-md-12 text-center">
+
+
+<h3 class="text-info">Welcome to</h3>
+
+<button class="btn btn-primary" id="name" type="button"
+onclick="document.getElementById('name').innerHTML = 'Art Aksenovs Freelance Front-end Web Development'">
+Click to display the name</button>
+
+<h2 id="name" class="text-info"></h2>
+</div>
