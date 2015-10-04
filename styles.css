@@ -1,0 +1,215 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Art Aksenovs
+Updated: October 2015
+Notes:	For Arthem.Info/arthemis1/mywebsite
+colors: Blue - #7DB1E6;
+Dark Blue: #105b63;
+Warm red: #e65b53;
+Gray-white;
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+.well .page-headr {
+   
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar {
+   background-color: #7DB1E6;
+   height: 60px;
+}
+
+ .navbar-nav>.active>a:hover, 
+ .navbar-nav>.active>a:focus, .navbar-nav>li>a {
+   color: white;
+   background-color: #4d71d2;
+   font-size: 18px;
+   
+   font-family: 'Oswald', sans-serif;
+   height: 60px;
+}
+
+.navbar-nav>.active>a {
+background-color: #7DB1E6;
+
+font-family: 'Oswald', sans-serif;
+height: 60px;
+}   
+
+.form-control {
+   margin-left: 30px;
+}
+
+#searchInput {
+   width: 200px;
+}
+
+.dropdown-menu {
+   position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 200px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #7DB1E6;
+    border: 1px solid #475182;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background-clip: padding-box;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.dropdown-toggle {
+  background-color: #7DB1E6; 
+}
+#searchInput, .btn, .btn-default {
+   color: white;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel .item {height: 400px; 
+}
+.carousel-caption {
+   font-size: 24px;
+}
+.carousel-caption h4 {
+   font-size: 32px;
+}
+#slide1 {
+   background: url('../../images/carousel_medium_01.jpg') top center no-repeat
+}
+#slide2 {
+   background: url('../../images/carousel_medium_02.jpg') top center no-repeat
+}
+#slide3 {
+   background: url('../../images/carousel_medium_03.jpg') top center no-repeat
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+/* --------------------------------------
+   CallOut Section
+   -------------------------------------- */
+.well {
+   margin-top: 20px;
+   min-width: 200px;
+   max-width: 1180px;
+   background-color: #7DB1E6;
+   -webkit-box-shadow: -9px -7px 24px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -9px -7px 24px -8px rgba(0,0,0,0.75);
+box-shadow: -9px -7px 24px -8px rgba(0,0,0,0.75);
+border: 0px;
+font-family: 'Oswald', sans-serif;
+vertical-align: middle;;
+}
+
+.well h1 {
+   font-family: 'Oswald', sans-serif;
+}
+.btn-danger {
+background-color: #e65b53;
+border: 0 4 0 0;
+border-style: solid;
+}
+
+#successAlert, #successAlert h4 {
+   background-color: #e65b53;
+   color: white;
+   margin-top: 20px;
+   font-family: 'Oswald', sans-serif;
+   font-size: 14px;
+}
+#successAlert .btn-default {
+   background-color: red;
+   color: white;
+
+}
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+   .carousel-caption {
+   font-size: 14px;
+}
+.carousel-caption h4 {
+   font-size: 18px;
+}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+   .carousel-caption {
+   font-size: 16px;
+}
+.carousel-caption h4 {
+   font-size: 20px;
+}
+
+	#myCarousel .item {height: 310px; 
+margin-top: 20px;}
+#slide1 {
+   background: url('../../images/carousel_small_01.jpg') top center no-repeat
+}
+#slide2 {
+   background: url('../../images/carousel_small_02.jpg') top center no-repeat
+}
+#slide3 {
+   background: url('../../images/carousel_small_03.jpg') top center no-repeat
+}
+.form-control {
+   margin-left: 30px;
+}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   .form-control {
+   margin-left: 30px;
+}
+#myCarousel .item {height: 500px; 
+margin-top: 20px;}
+#slide1 {
+   background: url('../../images/carousel_large_01.jpg') top center no-repeat
+}
+#slide2 {
+   background: url('../../images/carousel_large_02.jpg') top center no-repeat
+}
+#slide3 {
+   background: url('../../images/carousel_large_03.jpg') top center no-repeat
+}
+	
+}
