@@ -1,0 +1,1075 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable go to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+
+/*
+ * Really small screens and up
+ */
+/* @media only screen and (min-width: 220px) {} */
+
+/*
+ * Smalltouch sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+
+/*
+ * Smalltouch sizes and down
+ */
+@media only screen and (max-width: 480px) {
+  /* 
+   * Float Region Blocks - custom media query CSS example:
+   * 
+   * Float regions blocks is an Extension you can enable in the appearance
+   * settings for your theme. This feature allows you to automatically float
+   * blocks in regions, you can switch it on and off depending on your
+   * requirements. For design purposes you many want to remove the floats for
+   * devices where the entire theme is just one column - for example small
+   * mobile phones. The following CSS is inside the custom media query:
+   *
+   *   @media only screen and (max-width: 480px){}
+   *
+   * This will target devices with a maximum width of 480px - most small phones.
+   * In these smaller screen sizes we can remove the float and widths so all
+   * blocks stack instead of displaying horizonally. The selector used is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   */
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*
+ * Tablet sizes and up
+ */
+/* @media only screen and (min-width: 768px) {} */
+
+/*
+ * Desktops/laptops and up
+ */
+/* @media only screen and (min-width: 1025px) {} */
+body{
+  background: url('../images/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Palatino Linotype';
+  text-shadow: 0 0 0.5px rgba(0,0,0,0.3); 
+}
+#page{
+  margin-top: 30px;
+  background-color: rgb(255,255,255);
+  position: relative;
+}
+#header{
+  background-color: #fff;
+  height: 340px;
+  position: relative;
+}
+#logo{
+  padding-left: 10px;
+  padding-top: 35px;
+  margin: 10px;
+}
+#bar{
+  padding-right: 0px;    
+}
+
+#views_slideshow_cycle_teaser_section_hompage_slider-block img{
+  border: 4px solid #fff;
+}
+#block-views-hompage-slider-block{
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: -40px;
+}
+ul.menu{
+  text-align: center;
+  max-width: 923px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.nav ul.menu li a{
+  text-transform: uppercase;
+  font-family: 'Palatino Linotype';
+  font-weight: 100;
+  font-size: 12px;
+  color: #000;
+  padding: 10px;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ul.menu li a:hover{
+  text-decoration: none;
+}
+/*
+ul.menu .menu li a:hover{
+  text-decoration:underline;
+}
+*/
+.nav ul.menu li{
+  width:auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 19px;
+}
+.nav ul.menu li.first{
+  margin-left: 10px;
+}
+.nav ul.menu li.last{
+  margin-left: 0px;
+}
+.i18n-en .nav ul.menu li{
+  width:auto;
+  text-align: center;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+.i18n-en .nav ul.menu li.first{
+  margin-left: 12px;
+}
+.i18n-en .nav ul.menu li.last{
+  margin-left: 0px;
+}
+.i18n-en .nav ul.menu .menu li.first{
+  margin-left: 0;
+}
+ul.menu li:hover{
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.4);
+  box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.4);
+}
+ul.menu .menu li:hover{
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
+/* #primary-menu-bar li.first{
+  text-align: left
+}
+#primary-menu-bar li.last{
+  text-align: right;
+} */
+/* #columns{
+  margin-top: -150px
+} */
+
+
+
+.icheckbox_minimal {
+  display: inline-block!important;
+}
+/* Art Aksenovs - styling van de pagina het Team 08.06.16 
+In de view  http://makasatanzania.dd:8083/en/admin/structure/views/view/makasa/edit er wordt CSS class toegevoegd medewerkers-view*/
+.medewerkers-view .views-row {
+  background:  #fff;
+  display: inline-block;
+  color:  rgb(102, 76, 60);
+  margin: 7px 7px 0px 10px;
+  font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.medewerkers-view {
+  text-align: center; 
+  margin: 2px 2px 2px 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div .image-style-employees-heads {
+  padding-bottom: 12px;
+  padding-top: 7px;
+  /*margin-bottom: 30px;*/
+}
+
+.medewerkers-view .views-row .views-field-field-employee-function, .views-field-field-employee-function-ger, .views-field-field-employee-function-ned {
+  font-family: 'Palatino Linotype';
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+  display: inline-block;
+}
+
+#block-views-footer-blocks-block .views-row {
+  width: 230px;
+  border: 8px solid #fff;
+  background:  #fff;
+  margin: 10px;
+  display: inline-block;
+  font-size: 12px;
+  height: 170px;
+  overflow: hidden;
+  text-align: left;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.68);
+  -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.68);
+  box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.68);
+  border-bottom: 8px solid #fff;
+  padding-bottom: 0;
+  color:#3b3b3b;
+  vertical-align: top;
+}
+span.at_flat_counter {
+  display: none!important;
+}
+#block-views-footer-blocks-block .views-row img{
+  max-width: 230px;
+  width: 100%;
+  margin-top: 10px;
+}
+#block-views-footer-blocks-block .views-field-title {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 25px;
+  font-family: arial;
+  position: relative;
+  z-index: 100;
+  background: #fff;
+}
+.views-field-field-color{
+  display: none;
+}
+#content {
+  max-width: 860px;
+  margin: 0 auto;
+  color: #292929;
+  font-size: 12px;
+  /*     text-align: justify; */
+}
+#content .column p, #content .column h1, #content .column h2, #content .column h3, #content .column h4{
+  padding: 0 15px;
+  margin: 0;
+  /*   text-align: justify; */
+}
+#content .column img{
+  margin: 5px 0;}
+#content .column h2{
+  margin-top: 15px;
+}
+#views_slideshow_cycle_teaser_section_hompage_slider-block{
+  margin: 0 auto;
+}
+#views_slideshow_controls_text_pause_hompage_slider-block{
+  display: none;
+}
+#views_slideshow_controls_text_next_hompage_slider-block{
+  display: inline-block;
+  width: 14px;
+  height: 23px;
+  background: url('images/right.png') no-repeat;
+  font-size: 0px;
+  color: #444;
+}
+#views_slideshow_controls_text_previous_hompage_slider-block{
+  display: inline-block;
+  width: 14px;
+  height: 23px;
+  background: url('images/left.png') no-repeat;
+  font-size: 0px;
+  color: #444;
+  margin-right: 805px;
+  margin-left: 6px;
+}
+.views-slideshow-controls-bottom.clearfix{
+  position: relative;
+  top: -250px;
+  z-index: 100;
+}
+
+footer{
+  margin-bottom: 80px;
+  margin-top: 0px;
+}
+.field-name-field-backgroud-image{
+  /*   display:none; */
+}
+.window-size-indicator{display: none;}
+#stamp{
+  position:absolute;
+  float: right;
+  right: 5px;
+  margin-top: -15px;
+  opacity: 0.5;
+  z-index: 100;
+}
+.view-footer-blocks .view-content{
+  /*   padding-left: 20px; */
+}
+.menu .menu{
+  display: none;
+  width:auto!important;
+  position: absolute;
+  background: #fff;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 3px 3px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow:    2px 3px 3px 0px rgba(50, 50, 50, 0.4);
+  box-shadow:         2px 3px 3px 0px rgba(50, 50, 50, 0.4);
+
+  z-index: 100;
+  margin-left: -20px!important;
+}
+#block-system-main-menu > ul:nth-child(2){
+  margin: 0 auto;
+}
+#menu-bar{
+  margin-bottom: 20px;
+}
+.addthis_sharing_toolbox{
+  z-index: 100;
+  float: right;
+  position: absolute;
+  right: 41px;
+  margin-top: 75px;
+}
+.not-front #block-system-main{
+  margin-top: -140px;
+  background-color: #fff;
+  padding: 2px 2px 2px 2px;
+  border: solid 4px #E9E9E9;
+  display: table;
+  width: 100%;
+}
+.node-type-main-slider #block-system-main{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+}
+.node-type-main-slider #block-system-main .field-name-body{
+  /*
+max-width: 910px;
+  width:100%;
+  margin-left: -15px;
+  */
+  max-width: 910px!important;
+  width: 910px;
+  margin-left: -15px;
+}
+#block-views-hompage-slider-block{margin-top: -150px}
+#content footer{
+  display: none;
+}
+#webform-client-form-10, #webform-client-form-29{
+  padding: 30px;
+}
+#webform-client-form-10 input, #webform-client-form-10 textarea, #webform-client-form-29 input, #webform-client-form-29 textarea{
+  border:1px solid #000;
+  height: 22px;	
+}
+#webform-client-form-10 .webform-component--stel-uw-vraag, #webform-client-form-29 .webform-component--stel-uw-vraag{
+  float: right;
+  width: 400px;
+  margin-top: -164px; 
+}
+#edit-submitted-naam{
+  left: 27px;
+  position: relative;
+
+}
+#edit-submitted-telefoon{
+  margin-left: 17px; 
+}
+#webform-client-form-10 .form-actions, #webform-client-form-29 .form-actions{
+  text-align: right;
+  margin-top: -40px;
+}
+#webform-client-form-10 .form-actions input, #webform-client-form-29 .form-actions input{
+  border:none;
+  color:#fff;
+  background-color: #664c3c;
+  padding: 0px 15px;
+  margin-right: 150px;
+  font-family: 'Palatino Linotype';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 0px;
+  line-height: 15px;
+  font-size: 12px;
+}
+#edit-submitted-ja-ik-ontvsng-de-nieuwsbrief-tanzania-times{
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  /*   border:1px solid #000; */
+  padding: 0;
+  line-height: 20px;
+  display: inline-block;
+  /*   background-image: none; */
+  /*   box-decoration-break: 0; */
+}
+.webform-component--ja-ik-ontvsng-de-nieuwsbrief-tanzania-times.webform-container-inline{
+  margin-top: 40px;
+}
+.front #content header{
+  display: none;
+}
+#content nav{
+  text-align: right;
+  top: -40px;
+  position: relative;
+}
+
+.nav ul.menu .menu li{
+  display: block;
+  float: none;
+  width: auto;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.feed-icon{
+  display: none;
+}
+.view-display-id-page_1{
+  padding: 20px;
+  margin-top: -10px;
+}
+.view-display-id-page_1 .views-field-field-image{
+  float: right;
+  width:50%;
+  padding-bottom: 10px;
+  margin-top: 4px;
+}
+.view-display-id-page_1 img{
+  float: right;
+  width:100%;
+}
+.view-display-id-page_1 .views-field-title{
+  font-size: 16px;
+  line-height: 25px;
+  font-family: arial;
+  color:#664c3c;
+}
+#block-views-news-feed-block .views-row, #block-views-accomodations-block .views-row{
+  width: 230px;
+  height: 230px;
+  background: none repeat scroll 0% 0% #FFF;
+  outline: 1px solid #664C3C !important;
+  border:solid 10px #fff; 
+  margin: 10px;
+  overflow: hidden;
+  /*   display: inline-block; */
+  float: left;
+}
+#block-views-news-feed-block .views-field-body {
+  color: #333;
+  text-align: left;
+}
+#block-views-news-feed-block .views-field-title a, #block-views-accomodations-block .views-field-title a{
+  color: #664C3C;
+  font-size: 12px;
+  /*   line-height: 25px; */
+  font-weight:900;
+  font-family: arial;
+}
+#block-views-news-feed-block{
+  padding-left: 6px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  clear: both;
+}
+#block-views-news-feed-block .views-field-field-image img{
+  width: 100%;
+}
+#block-views-news-feed-block .views-more-link, .view-display-id-block .views-more-link{
+  color: #664C3C;
+  text-transform:uppercase;
+}
+.node-type-iframe-page #content{
+  max-width: 1050px;
+}
+.view-display-id-page_1 .views-field-field-link a, .view-display-id-page_1 .views-field-title a{
+  color:#664C3C;
+}
+.node-iframe-page .field-name-body{
+  display:none;
+}
+#content nav a {
+  text-transform: uppercase;
+  color: #664C3C;
+  margin-right: 15px;
+}
+.i18n-nl #edit-title{max-width: 179px;}
+#edit-title{
+  border: 1px solid !important;
+  height: 20px;
+  max-width: 161px;
+  right: 5px;
+  position: relative;
+}
+#edit-submit-accomodations{
+  border: 1px solid #664C3C;
+  background-color: #664C3C;
+  color: #FFF;
+  font-size: 12px;
+  padding: 3px 15px;
+  text-transform: uppercase;
+  margin: 0px 5px 5px 0px;
+  font-family: 'Palatino Linotype';
+  letter-spacing: 1px;
+  z-index: 100;
+  height: 24px!important;
+}
+
+.views-exposed-form{
+  float:right;
+  margin-right: 6px;
+}
+#edit-title-wrapper{
+  float:right;
+  padding: 0;
+}
+.views-exposed-widget.views-submit-button{
+  padding: 0;
+}
+#block-views-accomodations-block .view-content h3{
+  margin-left: 15px;
+  font-size:16px;
+  text-transform: capitalize;
+  font-family: arial;
+  color: #664C3C;
+  font-weight: 400;
+}
+.view-map.view-display-id-page .view-content{
+  background: url('/sites/default/files/map.jpg') no-repeat;
+  min-height: 837px;
+  max-width: 852px;
+  background-size: 100%;
+}
+.view-map.view-display-id-page .views-row{
+  position: absolute;
+  border:solid 2px #664C3C;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+#block-block-1{
+
+  text-align: right;
+  padding-top: 0px;
+  z-index: 1;
+  position: absolute;
+  right: 194px;/*om rechterkant van nederlandse vlaggetje inlijn met rechterkant van de artikels te laten staan */
+  top: 60px; /*om bovenbalk inlijn met benedenkant van MAKASA word laten staan */
+}
+.form-item.form-type-item{
+  display: none;
+}
+
+.sbHolder {
+  background-color: transparent;
+  border: solid 1px #aaa;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  height: 16px;
+  position: relative;
+  width: 129px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover {
+  color: black;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Palatino Linotype';
+  line-height: 18px;
+}
+.sbSelector {
+  display: block;
+  height: 16px;
+  left: 0;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 129px;
+  text-align: center;
+  line-height: 16px;
+  text-indent: 0;
+}
+.sbOptions a:link, .sbOptions a:visited {
+  color: black;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Palatino Linotype';
+  line-height: 18px;
+  padding: 3px 0;
+}
+.sbOptions {
+  background-color: #fff;
+  border: solid 1px #aaa;
+  list-style: none;
+  left: -1px;
+  margin: 0;
+  padding: 0!important;
+  position: absolute;
+  top: 30px;
+  width: 129px;
+  z-index: 1;
+  overflow-y: auto;
+  text-align: center;
+}
+.sbOptions a {
+  border-bottom: 0;
+  display: block;
+  outline: none;
+  padding: 0;
+}
+.view-map.view-display-id-page .views-row .views-field {
+  display: none;
+}
+.view-map.view-display-id-page .views-row .views-field-body {
+  position: absolute;
+  display: none;
+  width: 105px;
+  background: white;
+  padding: 15px;
+  height: auto;
+  font-size: 12px;
+  /*font-family: arial;*/
+  color: #664c3c;
+  text-align: left;
+  line-height: 20px;
+}
+.view-map.view-display-id-page .views-row .views-field-body p{
+  margin-bottom: 0;
+}
+.view-map.view-display-id-page .views-row .views-field-title a {
+  display: none;
+  width: 105px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+  font-size: 12px;
+}
+ul.menu .menu li.last{
+  padding-bottom: 20px;
+}
+ul.menu .menu li a{
+  padding-left: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #000;
+  padding-top: 0px;
+}
+.view-id-accomodations.view-display-id-block .views-field-title{
+  font-family: arial;
+  font-size: 12px;
+  font-weight: 900;
+}
+#edit-title-wrapper label{
+  display: none;
+}
+.page-map #block-system-main {
+  padding: 0;
+}
+ul.menu .menu li.first {
+  padding-top: 20px;
+}
+#edit-submitted-stel-uw-vraag {
+  height: 101px!important;
+}
+a {
+  color:#292929;
+}
+.ajax-progress-throbber {
+  display: none;
+}
+span.at300bs.at15nc.at15t_compact {
+  background: url(/sites/default/files/ssb.png);
+  background-size: 16px 16px;
+}
+
+input#edit-submitted-e-mailders, #edit-submitted-naam {
+  position: absolute;
+  left: 281px;
+}
+input#edit-submitted-telefoon {
+  position: absolute;
+  left: 264px;
+}
+#at20mc #at15s.atm {
+  padding: 0 !important;
+  width: 130px !important;
+}
+#messages{
+  margin-bottom: 30px;
+}
+ul.links li.translation_en, ul.links li.translation_nl{
+  display: none;
+}
+.front article{
+  max-width: 900px;
+  margin: 0 auto;
+}
+ul.menu ul.menu li.first, ul.menu ul.menu li.last{
+  margin-left: 0;
+}
+.front #block-system-main{
+  margin:15px 0;
+}
+.front #block-views-footer-blocks-block{
+  position: relative;
+  /* top: -25px; */
+  z-index: 100;
+}
+.webform-component--naam,
+.webform-component--e-mailders, 
+.webform-component--telefoon{
+  width:350px;
+  display: block;
+}
+.view-accomodations.view-display-id-page_1 .views-row > div{
+  width: 50%;
+}
+.page-map #block-system-main{
+  border-color:#fff;
+}
+.form-item label {
+  font-weight: 400;
+  line-height: 25px;
+}
+#edit-submitted-e-mail, #edit-submitted-telephone{
+  position: absolute;
+  left: 281px;
+}
+.webform-client-form input[type="text"],
+.webform-client-form input[type="email"] {
+  width:230px;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 100;
+  color: #664C3C;
+  font-family: arial;
+}
+#content a,#content a:visited,#content a:hover{
+  color: #664C3C;
+  text-decoration: underline;
+}
+#field-slideshow-1-controls{
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 3.5%;
+  max-width: 880px;
+  width: 90%;
+}
+.front #field-slideshow-1-controls
+{
+  left: 5.5%;
+}
+.next{
+  float: right;
+}
+.prev{
+  float: left;
+}
+.field-slideshow-1 {
+  border: 5px solid #fff;
+  max-height: 420px;
+  margin-bottom: 15px;
+  padding-bottom: 0!important;
+}
+#field-slideshow-1-controls a{
+  font-size: 0px;
+  height: 23px;
+  width: 14px;
+}
+#field-slideshow-1-controls .prev{
+  background: url('images/left.png') no-repeat;
+  height: 23px;
+  width: 14px;	
+}
+#field-slideshow-1-controls .next{
+  background: url('images/right.png') no-repeat;
+  height: 23px;
+  width: 14px;	
+}
+.language-switcher-locale-url li{
+  list-style: none;
+  display: inline-block; }
+  /*text-align: center;
+  margin-top: -17px;
+  height: 22px;	
+  margin-left: 7px;
+}*/
+.language-switcher-locale-url li a{
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.language-switcher-locale-url li a:hover{
+  text-decoration: none;
+}
+#webform-client-form-10, #webform-client-form-29{
+  margin-top: -20px;
+}
+.node-type-main-slider #block-system-main{
+  margin-top: -140px;
+}
+.node-type-main-slider article{
+  position: relative;
+}
+.readmore-text{
+  width: 870px;
+  left: 15px;
+  position: relative;
+}
+.view-accomodations.view-display-id-page_1 .views-field-body .field-content, .view-id-news_feed.view-display-id-page_1 .views-field-body .field-content{
+  padding-right: 20px;
+}
+#block-views-accomodations-block{
+  padding: 7px;
+  clear: both;
+}
+.view-id-news_feed.view-display-id-page_1 .views-field-body{
+  width: 50%;
+}
+.node-type-page .field-name-body{
+  padding-top: 15px;
+}
+
+.view-footer-blocks .view-content{
+  text-align: center;}
+#views-exposed-form-accomodations-block{
+  position: relative;
+  width:265px;
+  float: right;
+  margin-bottom: -40px;
+}
+div#block-views-news-feed-block .views-field-title, #block-views-accomodations-block .views-field-title{
+  text-align: left;
+}
+
+#block-views-accomodations-block .views-row:odd {
+  background: #e0dbd8;
+  border-color: #e0dbd8;
+}
+
+#block-views-accomodations-block .view-content h3, #block-views-accomodations-block .view-content a{
+  text-align: left;
+}
+
+@media only screen and (max-width:1130px) {
+  #webform-client-form-10 .webform-component--stel-uw-vraag, #webform-client-form-29 .webform-component--stel-uw-vraag{
+    float: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #webform-client-form-10 .form-actions, #webform-client-form-29 .form-actions {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width:1025px) {
+
+  #field-slideshow-1-controls {
+    left:5.5%
+  }
+}
+
+@media only screen and (max-width:900px) {
+  #block-views-news-feed-block .view-content, #block-views-accomodations-block .view-content{
+    text-align: center;
+  }
+  #views-exposed-form-accomodations-block{
+    margin: 0 auto;
+    float: none;
+  }
+  #block-views-accomodations-block .view-content h3{
+    text-align: center;
+  }
+  #block-views-accomodations-block .views-exposed-form{
+    /* 		width:100%; */
+    clear: both;
+  }
+  #block-views-accomodations-block h3{
+    clear: both;
+  }	
+}
+@media only screen and (max-width:768px) {
+  #stamp{
+    width:20%;
+  }
+}
+@media only screen and (max-width:1024px) {
+
+  .node-main-slider .column{
+    width:100%!important;
+    float: left;
+  }
+
+  .field-item.even {
+    max-width: 768px;
+    margin: 0px auto;
+    position: relative;
+  }
+  .node-type-main-slider #block-system-main .field-name-body {
+    margin-left: 0;
+  }
+  .node-type-main-slider #block-system-main .field-name-body{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:550px) {
+  #edit-submitted-e-mail, #edit-submitted-telephone {
+    left: 120px;
+  }
+  input#edit-submitted-e-mailders, #edit-submitted-naam {
+    position: absolute;
+    left: 120px;
+  }
+  input#edit-submitted-telefoon {
+    position: absolute;
+    left: 103px;
+  }
+  .column{
+    width:100%!important;
+    float: left;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .view-display-id-page_1 .views-field-field-image, .view-id-accomodations.view-display-id-page_1 .views-field-field-image, .view-accomodations.view-display-id-page_1 .views-row > div{
+    width: 100%;
+  }
+  .view-id-news_feed.view-display-id-page_1 .views-field-body, .view-id-accomodations.view-display-id-page_1 .views-field-body{
+    width:100%;
+  }
+
+}
+@media only screen and (max-width:400px) {
+  .webform-client-form input[type="text"], .webform-client-form input[type="email"] {
+    width: 150px;
+  }
+}
+
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+  background: transparent url('../images/checkbox-red.png') 0 1px no-repeat;
+  display:inline-block;
+}
+
+.ez-radio {
+  background: transparent url('../images/radio-black.png') 0 1px no-repeat;
+  display:inline-block;
+}
+
+.ez-checked { background-position: 0 -18px; }
+.ez-selected { background-position: 0 -19px; }
+
+.ez-checkbox-green {
+  background: transparent url('../images/checkbox-green.png') 0 1px no-repeat;
+  display:inline-block;
+  display: inline;
+}
+.ez-checked-green { background-position: 0 -18px; }
+.ez-checkbox, .ez-radio { zoom: 1; display:inline; height:30px; }
+.view-content h3{
+  clear: both;
+}
+.field-slideshow.field-slideshow-1.effect-fade.timeout-4500.with-pager.with-controls.field-slideshow-processed {
+  width: 100%!important;
+  max-width: 860px;
+}
+.tinynav-wrapper {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.tinynav-wrapper select{
+  width: 100%;
+}
+/* Art A */
+#block-locale-language {
+  position: relative;
+  bottom: 135px;
+  left: 83.5%;
+}
+
+#block-locale-language .language-link {
+  display: block;
+  text-indent: -1000px;
+  overflow: hidden;
+  width: 36px;
+  height: 22px;
+  background-image: url('../images/brit.png'); 
+  
+}
+
+#block-locale-language li {
+  padding: 3px;
+}
+
+#block-locale-language .nl .language-link {
+  background-image: url('../images/ned.png'); 
+  
+  
+}
+
+#block-locale-language .de .language-link {
+  background-image: url('../images/ger.png'); 
+ 
+}
+
+@media only screen and (max-width:1024px) {
+
+
+#block-locale-language {
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: 0%;
+    float: none;
+    text-align: center;
+    z-index: 2;
+  }
+
+  #block-locale-language .language-link .active {
+    display: block;
+    position: relative;
+  }
+
+   #block-block-1  {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    right: 0px;
+    top: 21px;
+  }
+  
+#block-block-1 {
+    margin: 0 0 -75px;
+    padding: 0 0 0 0px;
+}
+  #logo {
+    margin: 0 auto;
+    padding: 20px 0 10px;
+    width: 254px;
+}
+
+}
